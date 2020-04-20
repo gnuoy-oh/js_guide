@@ -1,0 +1,74 @@
+## [실습] 구구단 구현하기1 
+
+### 1. 2,3단 계산 및 출력
+
+- 2, 3단을 화면에 출력해보자.
+
+        function multiplyNum(){
+
+            for(i = 1; i < 10; i++){
+                console.log("2 *" + i + " = " + " 2 * i + "입니다");
+                document.write("2 *" + i + " = " + " 2 * i + "입니다");
+            }
+            
+            console.log('---------------------------------------------');
+            document.write('---------------------------------------------');
+
+
+            for(i = 1; i < 10; i++){
+                console.log("3 *" + i + " = " + " 3 * i + "입니다");
+                document.write("3 *" + i + " = " + " 3 * i + "입니다");
+            }
+            
+        }
+
+### 2. 4, 5 단 계산한 결과 값을 변수에 저장한 후, 저장한 변수 값을 출력한다.
+
+- 4, 5단을 화면에 출력해보자!
+
+            function multiplyNum04(){
+        
+                var ques = prompt("몇 단을 출력하실 건가요?"); 
+                //prompt 로 숫자가 나와도 string(문자열)로 출력되므로, 숫자로 바꿔주어야 한다.
+                var num = Number(ques);
+
+                for( i = 1; i < 10; i++){
+
+                    console.log(num + "*" + i + "=" + num * i + "입니다.");
+                    document.write(num + "*" + i + "=" + num * i + "입니다."+ "<br>");
+                }
+            }
+
+            multiplyNum04();
+
+### 3. 6, 7 단 계산한 결과값 출력하기
+
+- 6, 7 단을 화면에 출력하자! 
+        
+    function multiplyNum04(){
+        
+        var ques = prompt("몇 단을 출력하실 건가요?"); 
+        //prompt 로 숫자가 나와도 string(문자열)로 출력되므로, 숫자로 바꿔주어야 한다.
+        var num = Number(ques);
+
+            for( i = 1; i < 10; i++){
+    
+                console.log(num + "*" + i + "=" + num * i + "입니다.");
+                document.write(num + "*" + i + "=" + num * i + "입니다."+ "<br>");
+            }
+        }
+    
+        multiplyNum04();
+
+### 4. 8, 9 단 출력하기
+
+- 조건문 
+
+        document.write("1 <br>");
+        document.write("2 <br>");
+        document.write("3 <br>");
+        document.write("4 <br>");
+ 
+#### 도움받은 블로그
+
+- https://www.inflearn.com/course/javascript-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-codesquad-masters_lv1/dashboard
